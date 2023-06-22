@@ -233,6 +233,10 @@ main{
     scale: 0.95;
 }
 
+.get-started-btn:active{
+scale:0.95
+}
+
 footer{
 /* background-image:linear-gradient(rgba(250, 251, 250, 0.374), black) ; */
 backdrop-filter: blur(5px);
