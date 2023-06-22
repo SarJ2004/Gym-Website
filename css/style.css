@@ -201,6 +201,8 @@ main{
     background-image:linear-gradient( rgb(177, 0, 0), rgb(249, 106, 106));
     font-size: large;
     font-weight: bolder;
+    transition: all ease-in-out 250ms;
+
 }
 
 .get-started-btn{
@@ -214,6 +216,7 @@ main{
     background-image: linear-gradient(rgb(0, 135, 0),rgb(105, 252, 82));
     font-size: large;
     font-weight: bolder;
+  transition: all ease-in-out 250ms;
 }
 
 .read-more-btn:hover{
