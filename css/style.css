@@ -152,7 +152,7 @@ main{
     margin: 20px;
     position: absolute;
     bottom: 60px;
-    left: -200px;
+    left: -200px; 
     
  
 }
@@ -181,6 +181,7 @@ main{
     margin-left: 300px;
     font-family: 'Bebas Neue', sans-serif; 
     font-size: 64px;
+    word-wrap: break-word;
 }
 
 
@@ -256,9 +257,12 @@ backdrop-filter: blur(5px);
     padding: 0.5rem;
     /* position: fixed;
     top: 50vh; */
-    min-width: 600px;
+    min-width: 0px;
+
     /* max-height: fit-content; */
 backdrop-filter: blur(5px);
+font-size: 1rem;
+
 
 }
 
@@ -327,6 +331,11 @@ header div:nth-child(5).open{
     display: block;
     height: fit-content;
     }
+ 
+
+    body{
+        overflow-x: hidden;
+    }
 
 
 
@@ -359,10 +368,9 @@ header div:nth-child(5).open{
     .dropdown-menu a{
         width: 100%;
         text-align: center;
-
     }
 
-    
+
 
 
 }
@@ -381,7 +389,34 @@ text-align: center;
  .dropdown-menu{
     width:unset;
     left: 2rem;
-    min-width: 550px;
+    max-width: 550px;
+    
  }
+ .btn-r-g{
+    left: 0;
+ }
+
+ .upper-text{
+    position: absolute;
+    padding-left: 0;
+    left: 0;
+ }
+.center-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -100px;
+}
+.text{
+    max-width: 555px;
+   margin-right: 4rem;
+}
+
+.center-text{
+    font-size: 48px;
+}
+
+
+ 
 
 }
