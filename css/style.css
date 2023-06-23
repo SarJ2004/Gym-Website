@@ -14,7 +14,7 @@
 }
 
 body {
-    background-image: url("../img/gymguy.jpg");
+    background-image: url("../img/pexels-victor-freitas-841130.jpg");
     background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
@@ -36,6 +36,7 @@ header {
     padding-right: 35px;
     /* margin-top: 12px; */
     position: sticky;
+    min-width: 100%;
     top: 0;
    background-color: rgba(0, 0, 0, 0.538);
    z-index: 1;
@@ -43,6 +44,8 @@ header {
 
 
 }
+
+
 
 .header-left {
     transition: all ease-in-out 200ms;
@@ -57,7 +60,7 @@ header {
     max-height: 50px;
     /* width: 100%; */
     scale: 1.8;
-    margin-top:0.75rem ;
+    margin-top:1rem ;
 
 }
 
@@ -68,10 +71,13 @@ header {
 
 .logo-name {
     position: relative;
-    bottom: 11px;
+    /* bottom: 11px; */
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(255, 119, 0);
+    color: orangered;
     text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    left:-5px;
 }
 
 .logo-name:hover {
@@ -92,21 +98,26 @@ li {
 
 }
 
-li a {
+li a.exc {
     text-decoration: none;
     color: white;
-    transition: all ease-in-out 400ms;
+    transition: all ease-in 400ms;
     /* font-weight: bold; */
 }
 
-li a:hover {
+li a.exc:hover {
     /* font-weight: ; */
     /* font-size: 20px; */
-    color: rgb(255, 119, 0);
-    background-color: rgba(0, 0, 255, 0.275);
-    border-radius: 10px;
+    color:orangered;
+    background-color: rgba(255, 255, 255, 0.703);
+    border-radius: 5px;
 }
 
+li a.inc{
+    text-decoration: none;
+    color: orangered;
+    line-height: 3rem;
+}
 li:hover {
     scale: 1.1;
 }
@@ -114,7 +125,7 @@ li:hover {
 
 .header-right {
     /* background-color:  rgb(255, 119, 0); */
-    color: rgb(255, 119, 0);
+    color: orangered;
     border-radius: 15px;
     padding: 0.5rem;
     font-size: 22px;
@@ -125,7 +136,7 @@ li:hover {
     margin-top: 7px;
     transition: all ease-in-out 200ms;
     cursor: pointer;
-    border: 2px double blue;
+    border: 4px double white;
     justify-content: space-around;
 }
 
@@ -155,114 +166,67 @@ li:hover {
     text-decoration: none;
 }
 
+.neg{
+    filter: invert(100%);
+}
+
 main{
     min-height:165.5vh ;
 }
-
-.text{
-    /* border-right: 4px double gray;
-    border-bottom: 4px double gray; */
-    max-width: max-content;
-    border-radius: 15px;
-    margin: 20px;
-    position: absolute;
-    bottom: 60px;
-    left: -200px; 
-    
- 
-}
-
+/* 1 */
 .upper-text{
-    /* border: 2px solid green; */
+    font-size: 10rem;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 3rem;
-    /* padding: 1rem;
-    margin-top: 40px;
-    margin-left: 300px; */
-    text-transform: uppercase;
-    color: rgb(203, 212, 24);
-    word-wrap: normal;
+    margin: 2rem;
     text-align: center;
-    
 }
-
-
+.and{
+    color: orangered;
+}
 
 .center-text{
-    /* border: 2px solid orange; */
-    /* line-height: 40px; */
-    padding: 1rem;
-    margin-top: 50px;
-    margin-left: 300px;
+    
+    max-width: 700px;
+    padding-left: 4rem;
+    font-size: 6rem;
     font-family: 'Bebas Neue', sans-serif; 
-    font-size: 64px;
-    word-wrap: break-word;
+    padding-top: 3rem;
 }
 
-
-.center-text p:nth-child(3)
-{
-    color: rgb(16, 225, 16);
+.wu{
+    color: orangered;
 }
 
 .btn-r-g{
-    position: absolute;
-    bottom: -1px;
-    left: 100px;
-    /* backdrop-filter: blur(5px); */
-    padding: 1rem;
     display: flex;
-    gap: 16px;
-    z-index: 0;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 4rem;
 }
 
-.read-more-btn{
-    width: 128px;
-    height: 64px;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    color: white;
-    background-image:linear-gradient( rgb(177, 0, 0), rgb(249, 106, 106));
-    font-size: large;
-    font-weight: bolder;
-    transition: all ease-in-out 250ms;
-
+.rg{
+color: white;
+text-transform: uppercase;
+width: 128px;
+height: 64px;
+padding: 0;
+margin: 0;
+outline: none;
+border: none;
+border-radius: 5px;
+background-color: rgba(255, 68, 0, 0.615);
+font-size: 1rem;
+font-weight: 800;
+transition: all ease-in 250ms;
 }
-
-.get-started-btn{
-    width: 128px;
-    height: 64px;
-    padding: 0;
-    margin: 0;
-    outline: none;
-    border: none;
-    color: white;
-    background-image: linear-gradient(rgb(0, 135, 0),rgb(105, 252, 82));
-    font-size: large;
-    font-weight: bolder;
-  transition: all ease-in-out 250ms;
-}
-
-.read-more-btn:hover{
+.rg:hover{
     cursor: pointer;
-    scale: 1.05;
-}
-
-.get-started-btn:hover{
-    cursor: pointer;
-    scale: 1.05;
-}
-
-.read-more-btn:active{
+    color: orangered;
     scale: 0.95;
+    background-color: rgba(174, 172, 172, 0.568);
 }
 
-.get-started-btn:active{
-scale:0.95
-}
-
+/* 2 */
 footer {
 /* background-image:linear-gradient(rgba(250, 251, 250, 0.374), black) ; */
 backdrop-filter: blur(5px);
@@ -354,14 +318,15 @@ header div:nth-child(5).open{
 
     .btt{
         
-        width: 40px;
-        height: 40px;
+        width: 30px;
+        height: 30px;
 
         /* border: 2px solid blue; */
         border-radius: 5px;
         border: none;
         text-align: center;
-        font-size: 32px;
+        font-size: 24px;
+        margin-bottom: 9px;
         z-index: 1;
     }
     .btt:hover{
@@ -379,8 +344,9 @@ header div:nth-child(5).open{
     margin-top: 3rem;
     font-size: 5rem;
     font-family: 'Righteous', cursive;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    /* margin-left: 20rem;
+    margin-right: 20rem; */
+
 }
 .programs-offered p:first-child{
     color: rgb(255, 255, 255);
@@ -424,7 +390,7 @@ header div:nth-child(5).open{
 .item-title{
     padding-left: 1rem;
     font-family: 'Righteous', cursive;
-    color: rgb(255, 204, 0);
+    color: orangered;
 }
 .item-description{
     /* padding-left: 50px; */
@@ -465,10 +431,13 @@ header div:nth-child(5).open{
 .dumbell{
     padding-bottom: 10px;
 }
-span{
+span.bsm{
     color: orangered;
-    scale: 1.1;
-    font-weight: bold;
+    scale: 1.5;
+    font-weight: 900;
+}
+.first-word{
+    color: white;
 }
 
 
@@ -479,7 +448,10 @@ span{
     }
 
     .upper-text{
-        font-size: 2.5rem;
+        font-size: 7rem;
+    }
+    .center-text{
+        font-size: 4rem;
     }
 
     .header-mid{
@@ -525,12 +497,15 @@ span{
 @media screen and (max-width:600px){
 
 
+    body{
+        background-image: url('../img/pexels-ivan-samkov-4164761.jpg');
+    }
  .upper-text{
-font-size: larger;
-position: absolute;
-top:100px;
-padding-left: 0;
-text-align: center;
+font-size: 4rem;
+ }
+
+ .center-text{
+    font-size: 2rem;
  }
 
  .dropdown-menu{
@@ -538,38 +513,14 @@ text-align: center;
     left: 2rem;
     max-width: 550px;
  }
- .btn-r-g{
-    left: 0;
- }
 
- /* .upper-text{
-    position: absolute;
-    padding-left: 0;
-    left: 0;
- } */
-.center-text{
- 
-    position: relative;
-    left: -100px;
-    
-}
-.text{
-    max-width: 555px;
-   margin-right: 4rem;
-}
-
-.center-text{
-    font-size: 48px;
-}
-body{
-background-position: 40% 60% ;
-}
 footer{
     font-size: 1rem;
 }
 
 .programs-offered{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+
 }
 
 .description{
