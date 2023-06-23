@@ -379,6 +379,8 @@ header div:nth-child(5).open{
     margin-top: 3rem;
     font-size: 5rem;
     font-family: 'Righteous', cursive;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .programs-offered p:first-child{
     color: rgb(255, 255, 255);
