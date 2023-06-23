@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 
 
@@ -9,6 +10,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -20,6 +22,7 @@ body {
    min-height: 100vh;
     font-size: 1.5rem;
     color: white;
+
 }
 
 /* ||HEADER STYLING */
@@ -131,6 +134,15 @@ li:hover {
     gap: 1rem;
 }
 
+.btn a{
+    color: rgb(255, 119, 0);
+    text-decoration: none;
+}
+
+.btn a:visited{
+ color: rgb(255, 119, 0);
+}
+
 
 .header-right:hover {
     scale: 1.05;
@@ -138,6 +150,9 @@ li:hover {
 
 .header-right:active {
     scale: 0.95;
+}
+.header-left a{
+    text-decoration: none;
 }
 
 main{
@@ -337,6 +352,122 @@ header div:nth-child(5).open{
         overflow-x: hidden;
     }
 
+    .btt{
+        
+        width: 56px;
+        height: 56px;
+
+        /* border: 2px solid blue; */
+        border-radius: 32px;
+        border: none;
+        background-image: linear-gradient(white, orange);
+        font-size: 32px;
+        z-index: 1;
+    }
+    .btt:hover{
+        cursor: pointer;
+        scale: 1.05;
+    }
+    .btt:active{
+        scale: 0.95;
+    }
+
+/* ||ABOUT */
+.programs-offered{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    font-size: 5rem;
+    font-family: 'Righteous', cursive;
+}
+.programs-offered p:first-child{
+    color: rgb(255, 255, 255);
+}
+.programs-offered p:last-child{
+    color: orangered;
+}
+.wave{
+    text-align: center;
+    padding-top: 1rem;
+}
+.description{
+    text-align: center;
+    margin: 2rem;
+    color: rgb(255, 255, 255);
+
+}
+.grid{
+    /* display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 5rem;
+    margin-left: 2rem;
+    padding-bottom: 40px; */
+    display: flex;
+    min-height: 400px;
+    min-width: 200px;
+    margin-inline: auto;
+    gap:1rem ;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 2rem;
+    /* flex: 1; */
+    max-width: 100%;
+}
+.item-header{
+   display: flex;
+  align-items: center;
+   font-size: 2rem;
+}
+.item-title{
+    padding-left: 1rem;
+    font-family: 'Righteous', cursive;
+    color: rgb(255, 204, 0);
+}
+.item-description{
+    /* padding-left: 50px; */
+    max-width: 400px;
+    /* padding-top: 20px; */
+    border-radius: 10px;
+    background-color: rgba(79, 79, 79, 0.636);
+    backdrop-filter: blur(5px);
+    padding-left: 10px;
+
+ 
+    line-height: 1.8;
+    padding-right: 10px;
+    line-break: loose;
+
+}
+.details{
+    
+    padding-top: 20px;
+
+}
+
+.details a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background-color: orangered;
+    display: block;
+    border-radius: 10px;
+    text-align: center;
+    transition: all ease-in-out 200ms;
+}
+
+.details a:hover{
+    background-color: rgba(255, 144, 103, 0.69);
+    scale: 1.05;
+}
+.dumbell{
+    padding-bottom: 10px;
+}
+span{
+    color: orangered;
+    scale: 1.1;
+    font-weight: bold;
+}
 
 
 /* ||RESPONSIVE DESIGNING */
@@ -372,10 +503,24 @@ header div:nth-child(5).open{
     footer{
         font-size: 1.5rem;
     }
+    .btt{
+        height: 54px;
+        width: 54px;
+    }
+
+    .item-description{
+        max-width:600px;
+    }
 
 
 
 
+}
+
+@media screen and (max-width: 900px){
+    .programs-offered{
+        font-size: 4rem;
+    }
 }
 
 @media screen and (max-width:600px){
@@ -423,4 +568,20 @@ background-position: 40% 60% ;
 footer{
     font-size: 1rem;
 }
+.btt{
+    height: 48px;
+    width: 48px;
+    /* margin-right:5rem ; */
+    left:82%;
 }
+.programs-offered{
+    font-size: 2.5rem;
+}
+
+.description{
+    font-size: 1.5rem;
+}
+
+}
+
+
