@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="icon" href="img/239-2392915_logo-gym-logo-png-white.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="js/main.js"></script>
 
@@ -16,57 +17,100 @@
     <header>
         <div class="header-left">
             <!-- LOGO -->
-            <a href="/"><img src="img/favicon.ico" alt="logo" class="logo">
-                <p class="logo-name">BSM</p>
+            <a href="/"><img src="img/239-2392915_logo-gym-logo-png-white.png" alt="logo" class="logo" width="30px">
+                <p class="logo-name">BSM</p></a>
             </a>
         </div>
 
         <div class="header-mid">
             <!-- NAVBAR -->
             <ul class="mid-navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="merch.html">Merch</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="/" 
+                    class="exc">Home</a></li>
+                <li ><a href="about.html" class="exc">About</a></li>
+                <li ><a href="merch.html" class="exc">Merch</a></li>
+                <li ><a href="contact.html" class="exc">Contact</a></li>
             </ul>
 
         </div>
         <section class="btn">
             <div class="header-right one">
                 <!-- BUTTON -->
-                <a href="login.html"> Login🔑</a>
+              <a href="login.html">  Login <img src="./img/login2.png" alt="signin" height="20" class="neg"></a>
             </div>
-            <div class="header-right two">
+            <div class="header-right two" style="scale: 0.85; border:4px double orangered;">
                 <!-- BUTTON -->
-                <a href="signup.html"> Sign Up🌐</a>
+             <a href="signup.html" style="color: white;">   Sign Up&nbsp;<img src="./img/signin.png" alt="signin" height="20" class="neg"></a>
             </div>
         </section>
         <div class="toggle-btn">
             <i class="fa fa-bars fa fa-times"></i>
         </div>
         <div class="dropdown-menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="merch.html">Merch</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li>
-                <div class="header-right ">
-                    <!-- BUTTON -->
-                    Login&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🔑
-                </div>
-            </li>
-            <li>
-                <div class="header-right ">
-                    <!-- BUTTON -->
-                    Sign Up&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;🌐
+            <li><a href="/" class="exc">Home</a></li>
+            <li><a href="about.html" class="exc">About</a></li>
+            <li><a href="merch.html" class="exc">Merch</a></li>
+            <li><a href="contact.html" class="exc">Contact</a></li>
+           <li> <div class="header-right ">
+                <!-- BUTTON -->
+                <a href="login.html" class="inc">  Login <img src="./img/login2.png" alt="signin" height="20" class="neg"></a>
+            </div></li>
+           <li> <div class="header-right "   style=" border:4px double orangered;">
+                <!-- BUTTON -->
+                <a href="signup.html" class="inc"  style="color: white;">   Sign Up&nbsp;<img src="./img/signin.png" alt="signin" height="20" class="neg"></a>
+            </div></li>
                 </div>
             </li>
         </div>
 
     </header>
     <main>
-
-        
+        <marquee class="marquee"  direction="left" scrollamount="12">Join us now to get flat 15% off on weightlifting products on our store. Offer valid till January, 2024. Terms and Conditions apply.</marquee>
+        <p class="signup-title">Sign <span>Up</span></p>
+        <p class="wave"><img src="./img/wave.png" alt="wave" height="20"></p>
+        <form>
+            
+                <legend>
+                    Registration <span>Details</span>
+                </legend>
+                
+                <p class="first-name">
+                    <label for="first-name">First Name:</label>
+                    <input type="text" name="first-name" id="first-name" autofocus>
+                </p>
+                <p class="last-name">
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" name="last-name" id="last-name">
+                </p>
+            
+            <div class="mail">
+                <label for="mail">E-mail:</label>
+                <input type="email" name="mail" id="mail">
+            </div>
+            
+                <p class="pass">
+                <label for="pass"> Password:</label>
+                <input type="text" name="pass" id="pass">
+            </p>
+            <p class="repass">
+                <label for="repass">Re-Enter Password:</label>
+                <input type="password" name="repass" id="repass">
+            </p>
+           
+            <div class="program">
+                <label for="program">Fitness Program:</label>
+                    <select name="program" id="program" >
+                        <option value="1">Basic Fitness Course</option>
+                        <option value="2">Basic Muscle Course</option>
+                        <option value="3">Advanced Muscle Course</option>
+                        <option value="4">Body Building Course</option>
+                        <option value="5">Hardcore Gym Training</option>
+                        <option value="6">Yoga Training</option>
+                    </select>
+            </div>
+            </fieldset>
+        </form>
+        <p class="has-an-acc">Already have an account?&nbsp;&nbsp;<a href="./login.html">Log In</a></p>
 
     </main>
 
