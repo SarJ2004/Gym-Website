@@ -25,10 +25,10 @@
         <div class="header-mid">
             <!-- NAVBAR -->
             <ul class="mid-navbar">
-                <li><a href="/" 
+                <li><a href="index.html" 
                     class="exc">Home</a></li>
                 <li ><a href="about.html" class="exc">About</a></li>
-                <li ><a href="merch.html" class="exc">Merch</a></li>
+                <li ><a href="instructors.html" class="exc">Instructors</a></li>
                 <li ><a href="contact.html" class="exc">Contact</a></li>
             </ul>
 
@@ -47,17 +47,17 @@
             <i class="fa fa-bars fa fa-times"></i>
         </div>
         <div class="dropdown-menu">
-            <li><a href="/" class="exc">Home</a></li>
+            <li><a href="index.html" class="exc">Home</a></li>
             <li><a href="about.html" class="exc">About</a></li>
-            <li><a href="merch.html" class="exc">Merch</a></li>
+            <li><a href="instructors.html" class="exc">Instructors</a></li>
             <li><a href="contact.html" class="exc">Contact</a></li>
            <li> <div class="header-right ">
                 <!-- BUTTON -->
                 <a href="login.html" class="inc">  Login <img src="./img/login2.png" alt="signin" height="20" class="neg"></a>
             </div></li>
-           <li> <div class="header-right "   style=" border:4px double orangered;">
+           <li> <div class="header-right " >
                 <!-- BUTTON -->
-                <a href="signup.html" class="inc"  style="color: white;">   Sign Up&nbsp;<img src="./img/signin.png" alt="signin" height="20" class="neg"></a>
+                <a href="signup.html" class="inc" >   Sign Up&nbsp;<img src="./img/signin.png" alt="signin" height="20" class="neg"></a>
             </div></li>
                 </div>
             </li>
@@ -74,30 +74,30 @@
                     Registration <span>Details</span>
                 </legend>
                 
-                <p class="first-name">
+                <p class="form-item">
                     <label for="first-name">First Name:</label>
                     <input type="text" name="first-name" id="first-name" autofocus>
                 </p>
-                <p class="last-name">
+                <p class="form-item">
                     <label for="last-name">Last Name:</label>
                     <input type="text" name="last-name" id="last-name">
                 </p>
             
-            <div class="mail">
+            <div class="form-item">
                 <label for="mail">E-mail:</label>
                 <input type="email" name="mail" id="mail">
             </div>
             
-                <p class="pass">
+                <p class="form-item">
                 <label for="pass"> Password:</label>
-                <input type="text" name="pass" id="pass">
+                <input type="password" name="pass" id="pass">
             </p>
-            <p class="repass">
+            <p class="form-item">
                 <label for="repass">Re-Enter Password:</label>
                 <input type="password" name="repass" id="repass">
             </p>
            
-            <div class="program">
+            <div class="form-item">
                 <label for="program">Fitness Program:</label>
                     <select name="program" id="program" >
                         <option value="1">Basic Fitness Course</option>
@@ -107,6 +107,11 @@
                         <option value="5">Hardcore Gym Training</option>
                         <option value="6">Yoga Training</option>
                     </select>
+            </div>
+ 
+            <div>
+                <button type="submit" class="reg">Register</button>
+                <button type="reset" class="sub">Reset</button>
             </div>
             </fieldset>
         </form>

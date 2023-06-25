@@ -1,0 +1,160 @@
+*{
+    background-image: none;
+    /* color: black; */
+}
+
+body{
+    background-image: url('../img/pexels-lukas-669577.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.instructors-title{
+    font-size: 7rem;
+    font-family: 'Righteous', cursive;
+    padding-top: 4rem;
+   color: black;
+    text-align: center;
+}
+
+.instructors-title span{
+    color: orangered;
+}
+
+.wave{
+    text-align: center;
+}
+
+.instructors-desc{
+    padding: 1rem;
+    text-align: center;
+    color: rgb(50, 50, 50);
+}
+
+.instructors-grid{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-inline: auto;
+    margin-top: 2rem;
+    /* padding: 2rem; */
+    
+}
+
+.instructor-card{
+    max-width: 350px;
+    background-color:rgb(255, 255, 255);
+    border-bottom-left-radius:0 ;
+    border-bottom-right-radius:0 ;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+    
+    
+}
+
+.socials{
+    display: flex;
+    gap: 1rem;
+    background-color: black;
+    
+}
+
+.fb:hover{
+    scale: 1.05;
+}
+.insta:hover{
+    scale: 1.05;
+}
+.linkedin:hover{
+    scale: 1.05;
+}
+.img{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.img img{
+    border-radius: 5px;
+}
+.job{
+    margin-left: 21px;
+    color: rgb(255, 68, 0);
+    font-weight: bolder;
+}
+.name{
+    margin-left: 20px;
+    text-align: center;
+    color: black;
+}
+
+.description{
+    color: rgb(72, 72, 72);
+    font-size: medium;
+}
+.instructor-nav{
+    display: none;
+    font-size: 1.5rem;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 5rem 0 5rem 0;
+    background-color: rgba(98, 98, 98, 0.422);
+position: absolute;
+top: 0;
+width: 100%;
+height: 40px;
+align-items: center;
+
+    
+}
+.instructor-nav li{
+    list-style-type: none;
+}
+.instructor-nav li:hover{
+    scale: 1.05;
+    background-color: rgba(191, 191, 191, 0.704);
+    border-radius: 5px;
+}
+
+.instructor-nav span{
+    color: black;
+}
+
+.instructor-nav li a{
+    text-decoration: none;
+    color: orangered
+}
+
+@media screen and (max-width:1024px){
+    .instructor-nav{
+        display: flex;
+    }
+}
+@media screen and (max-width:768px){
+    .instructor-nav{
+        font-size: 1rem;
+    }
+    .instructors-title{
+        font-size: 5rem;
+    }
+    .instructors-desc{
+        color: black;
+    }
+}
+
+@media screen and (max-width:450px){
+    .instructor-nav{
+        font-size: 0.75rem;
+    }
+    .instructors-title{
+        font-size: 3rem;
+    }
+    .instructors-desc{
+        font-size: 1rem;
+        color: black;
+    }
+}
+
+

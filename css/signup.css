@@ -91,42 +91,23 @@ option{
     cursor: pointer;
     
 }
-.first-name{
+.form-item{
     display: flex;
     flex-direction: column;
     
 }
 
-.last-name{
-    display: flex;
-    flex-direction: column;
-}
 
-.mail{
-    display: flex;
-    flex-direction: column;
-}
-.pass{
-    display: flex;
-    flex-direction: column;
-}
-.repass{
-    display: flex;
-    flex-direction: column;
-}
-.program{
-    display: flex;
-    flex-direction: column;
-}
 
 .has-an-acc{
 text-align: center;
+padding-top: 20px;
 
 }
 
 .has-an-acc a{
     text-decoration: none;
-    color: white;
+    color: orangered;
     transition: all ease-in 250ms;
     
     
@@ -135,6 +116,31 @@ text-align: center;
 .has-an-acc a:hover{
     text-decoration: underline;
     text-decoration-color: orangered;
+    color: white;
+}
+
+.reg, .sub{
+    color: white;
+text-transform: uppercase;
+width: 128px;
+height: 64px;
+padding: 0;
+margin-left: 10px;
+outline: none;
+border: none;
+border-radius: 5px;
+background-color: rgba(255, 68, 0, 0.615);
+font-size: 1rem;
+font-weight: 800;
+transition: all ease-in 250ms;
+
+}
+
+.reg:hover, .sub:hover{
+    cursor: pointer;
+    color: orangered;
+    scale: 0.95;
+    background-color: rgba(174, 172, 172, 0.568);
 }
 
 
@@ -145,10 +151,16 @@ text-align: center;
     }
 
     legend{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .signup-title{
         font-size: 5rem;
         width: auto;
+    }
+label{
+    font-size: 2rem;
+}
+    .has-an-acc{
+        font-size: 1.3rem;
     }
 }

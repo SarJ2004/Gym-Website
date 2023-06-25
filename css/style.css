@@ -2,6 +2,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
 
 
 
@@ -209,13 +210,13 @@ color: white;
 text-transform: uppercase;
 width: 128px;
 height: 64px;
-padding: 0;
+padding: 5px;
 margin: 0;
 outline: none;
 border: none;
 border-radius: 5px;
 background-color: rgba(255, 68, 0, 0.615);
-font-size: 1rem;
+font-size: 0.8rem;
 font-weight: 800;
 transition: all ease-in 250ms;
 }
@@ -225,6 +226,63 @@ transition: all ease-in 250ms;
     scale: 0.95;
     background-color: rgba(174, 172, 172, 0.568);
 }
+
+.banner{
+    margin-top: 500px;
+    background-image: url(../img/pexels-tima-miroshnichenko-6389886.jpg);
+    min-height:400px ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    box-shadow: 0 0 15px orangered;
+}
+
+.banner-head{
+    font-family: 'Tilt Prism', cursive;
+    text-align: center;
+    font-size:5rem;
+}
+
+.think, .today{
+    color: orangered;
+}
+
+.banner-description{
+    margin-top: 20px;
+    font-size: larger;
+    text-align: center;
+}
+
+.banner-button{
+    color: white;
+    text-transform: uppercase;
+    width: 128px;
+    height: 64px;
+    padding: 5px;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 68, 0, 0.615);
+    font-size: 0.8rem;
+    font-weight: 800;
+    transition: all ease-in 250ms;
+}
+
+.banner-button:hover{
+    cursor: pointer;
+    color: orangered;
+    scale: 0.95;
+    background-color: rgba(174, 172, 172, 0.568);
+}
+
+.banner div:last-child{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
 
 /* 2 */
 footer {
@@ -269,10 +327,13 @@ scale: 1.1;
     top: 70px;
     width: 300px;
     text-align: center;
-    background-color: rgba(255,255,255,0.1);
     border-radius: 10px;
     backdrop-filter: blur(5px);
     line-height: 4rem;
+    border-color: rgba(71, 69, 69, 0.592);
+    border-width: 12px;
+    /* border-style: groove; */
+    border-style: inset;
     
 }
 
@@ -374,11 +435,11 @@ header div:nth-child(5).open{
     min-height: 400px;
     min-width: 200px;
     margin-inline: auto;
-    gap:1rem ;
+    gap:2rem ;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 2rem;
+    margin: 3rem;
     /* flex: 1; */
     max-width: 100%;
 }
@@ -483,6 +544,13 @@ span.bsm{
         max-width:600px;
     }
 
+    .banner-head{
+        font-size: 3rem;
+    }
+    .banner-description{
+        font-size: 1.5rem;
+    }
+
 
 
 
@@ -525,6 +593,13 @@ footer{
 
 .description{
     font-size: 1.5rem;
+}
+
+.banner-head{
+    font-size: 1.6rem;
+}
+.banner-description{
+    font-size: 1.1rem;
 }
 
 }
