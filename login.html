@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="icon" href="img/239-2392915_logo-gym-logo-png-white.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script defer src="js/main.js"></script>
 
@@ -16,7 +17,7 @@
     <header>
         <div class="header-left">
             <!-- LOGO -->
-            <a href="/"><img src="img/239-2392915_logo-gym-logo-png-white.png" alt="logo" class="logo" width="30px">
+            <a href="index.html"><img src="img/239-2392915_logo-gym-logo-png-white.png" alt="logo" class="logo" width="30px">
                 <p class="logo-name">BSM</p></a>
             </a>
         </div>
@@ -63,9 +64,27 @@
 
     </header>
     <main>
+        <p class="signup-title">Log <span>In</span></p>
+        <p class="wave"><img src="./img/wave.png" alt="wave" height="20"></p>
+        <form>
+            <fieldset>
+                <p class="form-title">Log In <span>Details</span></p>
+               
+               <div class="email"><label for="mail-id">E-mail: </label><br>
+                <input type="email" name="mail-id" id="mail-id"></div>
+                
+                <div class="pass"> <label for="password">Password:</label><br>
+                <input type="password" name="password" id="password"></div>
+               
+                <div class="login-sub">
+                    <button type="submit" class="reg">Log In</button>
+                    
+                </div>
 
-       
-
+            </fieldset>
+        </form>
+        <p class="forgot-pass"><a href="#">Forgot Password</a></p>
+        <p class="has-no-acc">Don't have an account?&nbsp;&nbsp;<a href="./signup.html">Sign Up</a></p>
     </main>
 
     <footer id="contact">
@@ -84,6 +103,7 @@
                             <a href="#"> <button class="btt">🔝</button></a>
                         </div>
         </section>
+        <div class="copyright"><span>&copy;</span>Sarthak Jha, 2023</div>
 
     </footer>
 </body>

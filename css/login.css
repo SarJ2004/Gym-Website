@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
+
+body{
+    background-image: url('../img/pexels-estudio-polaroid-3112004.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.signup-title{
+    font-size: 7rem;
+    font-family: 'Righteous', cursive;
+    padding-top: 4rem;
+    margin-left: 2rem;
+    text-align: center;
+    
+}
+
+.signup-title span{
+    color: orangered;
+}
+.wave{
+    text-align: center;
+    scale: 1.1;
+}
+
+fieldset
+{
+padding: 1rem;
+margin: 1rem;
+background-color:rgba(0, 0, 0, 0.404);
+border: 4px double white;
+border-radius: 10px;
+margin-top: 5rem;
+box-shadow: 0 0 15px black;
+
+}
+
+fieldset p{
+    font-size: 3rem;
+    font-family: "Fugaz One", "cursive";
+    text-align: center;
+    
+}
+
+fieldset p span{
+    color: orangered;
+}
+
+
+
+input{
+    min-height: 60px;
+    width: 100%;
+    background-color: rgba(255, 68, 0, 0.434);
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    padding: 1rem;
+    font-size: 1.3rem;
+    
+
+}
+
+input:focus{
+    scale: 1.01;
+    box-shadow: 0 0 15px black;
+}
+
+.reg{
+    color: white;
+text-transform: uppercase;
+width: 128px;
+height: 64px;
+padding: 0;
+margin-left: 10px;
+outline: none;
+border: none;
+border-radius: 5px;
+background-color: rgba(255, 68, 0, 0.615);
+font-size: 1rem;
+font-weight: 800;
+transition: all ease-in 250ms;
+
+}
+
+.reg:hover{
+    cursor: pointer;
+    color: orangered;
+    scale: 0.95;
+    background-color: rgba(174, 172, 172, 0.568);
+}
+
+.login-sub{
+    text-align: center;
+}
+
+.email{
+margin-bottom: 2rem;
+}
+.pass{
+    margin-bottom: 2rem;
+}
+
+.forgot-pass{
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+   
+}
+.forgot-pass a{
+    text-decoration: none;
+    color: orangered;
+    transition: all ease-in-out 250ms;
+}
+
+.has-no-acc{
+    margin-left: 1rem;
+   
+}
+.has-no-acc a{
+    text-decoration: none;
+    color: orangered;
+    transition: all ease-in-out 250ms;
+}
+
+.has-no-acc a:hover, .forgot-pass a:hover{
+color: white;
+text-decoration: underline;
+text-decoration-color: orangered;
+}
+
+@media screen and (max-width:425px) {
+    .form-title{
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+   label{
+        display: block;
+        text-align: center;
+        
+    }
+.email{
+    line-height: 0.8;
+}
+.pass{
+    line-height: .8;
+}
+
+.signup-title{
+    font-size: 5rem;
+}
+
+.forgot-pass{
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.has-no-acc {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+
+}

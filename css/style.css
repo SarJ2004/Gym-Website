@@ -450,7 +450,8 @@ header div:nth-child(5).open{
     min-height: 400px;
     min-width: 200px;
     margin-inline: auto;
-    gap:2rem ;
+    column-gap:2rem ;
+    row-gap: 5rem;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
