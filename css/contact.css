@@ -25,7 +25,7 @@ width: 100%;
 
 fieldset{
     /* max-height: 500px; */
-    padding: 1rem;
+    padding: .5rem;
     line-height: 5;
     text-align: center;
     border: 4px double rgb(255, 255, 255);
@@ -186,6 +186,7 @@ width: 100%;
         font-size: 2rem;
         
     }
+
 }
 
 @media screen and (max-width:700px) {
