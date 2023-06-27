@@ -34,22 +34,25 @@ body{
 }
 .wave{
     text-align: center;
+    scale: 1.1;
 }
 
 form{
     
-    backdrop-filter: blur(3px);
+    
    display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background-color: rgba(96, 96, 96, 0.337);
+    background-color: rgba(0, 0, 0, 0.337);
     align-items: center;
     flex-wrap: nowrap;
     gap: 1rem;
     padding: 2rem;
-    border-radius: 10%;
-    
-    
+    margin: 10px;
+    border-radius: 10px;
+    border: 4px double white;
+    box-shadow: 0 0 15px black;
+
 }
 
 legend{
@@ -82,10 +85,16 @@ input, select{
     border: 2px solid white;
     color: white;
     font-size: 1.5rem;
+    padding: 1rem;
     
 }
 input:hover, select:hover{
     cursor: pointer;
+}
+input:focus, select:focus{
+    scale: 1.01;
+    box-shadow: 0 0 30px black;
+
 }
 option{
     cursor: pointer;

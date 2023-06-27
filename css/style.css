@@ -2,7 +2,7 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
 
 
 
@@ -235,11 +235,15 @@ transition: all ease-in 250ms;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
-    box-shadow: 0 0 15px orangered;
+    box-shadow: 0 0 15px black;
+    margin-bottom: 200px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
 }
 
 .banner-head{
-    font-family: 'Tilt Prism', cursive;
+    font-family: 'Belanosima', sans-serif;
     text-align: center;
     font-size:5rem;
 }
@@ -318,6 +322,17 @@ align-items: center;
 
 .scl:hover{
 scale: 1.1;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 1rem;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+}
+.copyright span{
+    color: orangered;
 }
 
 .dropdown-menu{
@@ -596,7 +611,7 @@ footer{
 }
 
 .banner-head{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 .banner-description{
     font-size: 1.1rem;
