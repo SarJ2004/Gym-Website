@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@600&display=swap');
 
 
 
@@ -20,7 +20,7 @@ body {
     background-position: center;
     background-size: cover;
     font-family: "Nunito", sans-serif;
-   min-height: 100vh;
+    min-height: 100vh;
     font-size: 1.5rem;
     color: white;
 
@@ -39,11 +39,8 @@ header {
     position: sticky;
     min-width: 100%;
     top: 0;
-   background-color: rgba(0, 0, 0, 0.538);
-   z-index: 1;
-  
-
-
+    background-color: rgba(0, 0, 0, 0.538);
+    z-index: 1;
 }
 
 
@@ -61,7 +58,7 @@ header {
     max-height: 50px;
     /* width: 100%; */
     scale: 1.8;
-    margin-top:1rem ;
+    margin-top: 1rem;
 
 }
 
@@ -78,7 +75,7 @@ header {
     text-align: center;
     font-weight: bolder;
     font-size: 30px;
-    left:-5px;
+    left: -5px;
 }
 
 .logo-name:hover {
@@ -109,16 +106,17 @@ li a.exc {
 li a.exc:hover {
     /* font-weight: ; */
     /* font-size: 20px; */
-    color:orangered;
+    color: orangered;
     background-color: rgba(255, 255, 255, 0.703);
     border-radius: 5px;
 }
 
-li a.inc{
+li a.inc {
     text-decoration: none;
     color: orangered;
     line-height: 3rem;
 }
+
 li:hover {
     scale: 1.1;
 }
@@ -146,13 +144,13 @@ li:hover {
     gap: 1rem;
 }
 
-.btn a{
+.btn a {
     color: orangered;
     text-decoration: none;
 }
 
-.btn a:visited{
- color: orangered;
+.btn a:visited {
+    color: orangered;
 }
 
 
@@ -163,74 +161,78 @@ li:hover {
 .header-right:active {
     scale: 0.95;
 }
-.header-left a{
+
+.header-left a {
     text-decoration: none;
 }
 
-.neg{
+.neg {
     filter: invert(100%);
 }
 
-main{
-    min-height:165.5vh ;
+main {
+    min-height: 165.5vh;
 }
+
 /* 1 */
-.upper-text{
+.upper-text {
     font-size: 10rem;
     font-family: 'Bebas Neue', sans-serif;
     margin: 2rem;
     text-align: center;
 }
-.and{
+
+.and {
     color: orangered;
 }
 
-.center-text{
-    
+.center-text {
+
     max-width: 700px;
     padding-left: 4rem;
     font-size: 6rem;
-    font-family: 'Bebas Neue', sans-serif; 
+    font-family: 'Bebas Neue', sans-serif;
     padding-top: 3rem;
 }
 
-.wu{
+.wu {
     color: orangered;
 }
 
-.btn-r-g{
+.btn-r-g {
     display: flex;
     justify-content: center;
     gap: 2rem;
     margin-top: 4rem;
 }
 
-.rg{
-color: white;
-text-transform: uppercase;
-width: 128px;
-height: 64px;
-padding: 5px;
-margin: 0;
-outline: none;
-border: none;
-border-radius: 5px;
-background-color: rgba(255, 68, 0, 0.615);
-font-size: 0.8rem;
-font-weight: 800;
-transition: all ease-in 250ms;
+.rg {
+    color: white;
+    text-transform: uppercase;
+    width: 128px;
+    height: 64px;
+    padding: 5px;
+    margin: 0;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 68, 0, 0.615);
+    font-size: 0.8rem;
+    font-weight: 800;
+    transition: all ease-in 250ms;
 }
-.rg:hover{
+
+.rg:hover {
     cursor: pointer;
     color: orangered;
     scale: 0.95;
     background-color: rgba(174, 172, 172, 0.568);
 }
 
-.banner{
+.banner {
     margin-top: 500px;
     background-image: url(../img/pexels-tima-miroshnichenko-6389886.jpg);
-    min-height:400px ;
+    min-height: 400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -242,23 +244,24 @@ transition: all ease-in 250ms;
     border-radius: 5px;
 }
 
-.banner-head{
+.banner-head {
     font-family: 'Belanosima', sans-serif;
     text-align: center;
-    font-size:5rem;
+    font-size: 5rem;
 }
 
-.think, .today{
+.think,
+.today {
     color: orangered;
 }
 
-.banner-description{
+.banner-description {
     margin-top: 20px;
     font-size: larger;
     text-align: center;
 }
 
-.banner-button{
+.banner-button {
     color: white;
     text-transform: uppercase;
     width: 128px;
@@ -274,14 +277,14 @@ transition: all ease-in 250ms;
     transition: all ease-in 250ms;
 }
 
-.banner-button:hover{
+.banner-button:hover {
     cursor: pointer;
     color: orangered;
     scale: 0.95;
     background-color: rgba(174, 172, 172, 0.568);
 }
 
-.banner div:last-child{
+.banner div:last-child {
     text-align: center;
     margin-top: 30px;
 }
@@ -290,10 +293,10 @@ transition: all ease-in 250ms;
 
 /* 2 */
 footer {
-/* background-image:linear-gradient(rgba(250, 251, 250, 0.374), black) ; */
-backdrop-filter: blur(5px);
-/* background-color: rgba(0, 0, 0, 0.23);    */
- /* min-height:3vw ; */
+    /* background-image:linear-gradient(rgba(250, 251, 250, 0.374), black) ; */
+    backdrop-filter: blur(5px);
+    /* background-color: rgba(0, 0, 0, 0.23);    */
+    /* min-height:3vw ; */
     /* border: 2px solid orange; */
     padding: 0.5rem;
     /* position: fixed;
@@ -301,8 +304,8 @@ backdrop-filter: blur(5px);
     min-width: 0px;
 
     /* max-height: fit-content; */
-backdrop-filter: blur(5px);
-font-size: 2rem;
+    backdrop-filter: blur(5px);
+    font-size: 2rem;
 
 
 }
@@ -313,29 +316,30 @@ font-size: 2rem;
     text-decoration: underline;
 } */
 
-.social{
-display: flex;
-justify-content: space-evenly;
-align-items: center;
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 
 }
 
-.scl:hover{
-scale: 1.1;
+.scl:hover {
+    scale: 1.1;
 }
 
-.copyright{
+.copyright {
     text-align: center;
     font-size: 1rem;
     background-color: black;
     padding: 0;
     margin: 0;
 }
-.copyright span{
+
+.copyright span {
     color: orangered;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     display: block;
     position: absolute;
     right: 2rem;
@@ -349,20 +353,20 @@ scale: 1.1;
     border-width: 12px;
     /* border-style: groove; */
     border-style: inset;
-    
+
 }
 
-.dropdown-menu a{
-    display:block;
+.dropdown-menu a {
+    display: block;
     width: 100%;
-    
+
 }
 
-.dropdown-menu li:hover{
+.dropdown-menu li:hover {
     scale: 0.8;
 }
 
-.dropdown-menu .header-right{
+.dropdown-menu .header-right {
     text-align: center;
     margin: 0;
     padding: 0;
@@ -371,50 +375,52 @@ scale: 1.1;
 /* .dropdown-menu .header-right:hover{
     scale: 0.9;
 } */
-.toggle-btn{
+.toggle-btn {
     display: none;
 }
 
-header div:nth-child(5){
-display: none;
-height: 0;
-/* transition:all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
+header div:nth-child(5) {
+    display: none;
+    height: 0;
+    /* transition:all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275); */
 
 }
 
-header div:nth-child(5).open{
+header div:nth-child(5).open {
     display: block;
     height: fit-content;
-    }
- 
+}
 
-    body{
-        overflow-x: hidden;
-    }
 
-    .btt{
-        
-        width: 30px;
-        height: 30px;
+body {
+    overflow-x: hidden;
+}
 
-        /* border: 2px solid blue; */
-        border-radius: 5px;
-        border: none;
-        text-align: center;
-        font-size: 24px;
-        margin-bottom: 9px;
-        z-index: 1;
-    }
-    .btt:hover{
-        cursor: pointer;
-        scale: 1.05;
-    }
-    .btt:active{
-        scale: 0.95;
-    }
+.btt {
+
+    width: 30px;
+    height: 30px;
+
+    /* border: 2px solid blue; */
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 9px;
+    z-index: 1;
+}
+
+.btt:hover {
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.btt:active {
+    scale: 0.95;
+}
 
 /* ||ABOUT */
-.programs-offered{
+.programs-offered {
     display: flex;
     justify-content: center;
     margin-top: 3rem;
@@ -424,23 +430,28 @@ header div:nth-child(5).open{
     margin-right: 20rem; */
 
 }
-.programs-offered p:first-child{
+
+.programs-offered p:first-child {
     color: rgb(255, 255, 255);
 }
-.programs-offered p:last-child{
+
+.programs-offered p:last-child {
     color: orangered;
 }
-.wave{
+
+.wave {
     text-align: center;
     padding-top: 1rem;
 }
-.description{
+
+.description {
     text-align: center;
     margin: 2rem;
     color: rgb(255, 255, 255);
 
 }
-.grid{
+
+.grid {
     /* display: grid;
     grid-template-columns: repeat(3,1fr);
     row-gap: 5rem;
@@ -450,7 +461,7 @@ header div:nth-child(5).open{
     min-height: 400px;
     min-width: 200px;
     margin-inline: auto;
-    column-gap:2rem ;
+    column-gap: 2rem;
     row-gap: 5rem;
     justify-content: space-evenly;
     align-items: center;
@@ -459,17 +470,20 @@ header div:nth-child(5).open{
     /* flex: 1; */
     max-width: 100%;
 }
-.item-header{
-   display: flex;
-  align-items: center;
-   font-size: 2rem;
+
+.item-header {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
 }
-.item-title{
+
+.item-title {
     padding-left: 1rem;
     font-family: 'Righteous', cursive;
     color: orangered;
 }
-.item-description{
+
+.item-description {
     /* padding-left: 50px; */
     max-width: 400px;
     /* padding-top: 20px; */
@@ -478,19 +492,20 @@ header div:nth-child(5).open{
     backdrop-filter: blur(5px);
     padding-left: 10px;
 
- 
+
     line-height: 1.8;
     padding-right: 10px;
     line-break: loose;
 
 }
-.details{
-    
+
+.details {
+
     padding-top: 20px;
 
 }
 
-.details a{
+.details a {
     display: flex;
     text-decoration: none;
     color: white;
@@ -501,69 +516,78 @@ header div:nth-child(5).open{
     transition: all ease-in-out 200ms;
 }
 
-.details a:hover{
+.details a:hover {
     background-color: rgb(255, 144, 103);
     scale: 1.05;
 }
-.dumbell{
+
+.dumbell {
     padding-bottom: 10px;
 }
-span.bsm{
+
+span.bsm {
     color: orangered;
     scale: 1.5;
     font-weight: 900;
 }
-.first-word{
+
+.first-word {
     color: white;
 }
 
 
 /* ||RESPONSIVE DESIGNING */
 @media screen and (max-width:990px) {
-    .btn{
+    .btn {
         display: none;
     }
 
-    .upper-text{
+    .upper-text {
         font-size: 7rem;
     }
-    .center-text{
+
+    .center-text {
         font-size: 4rem;
     }
 
-    .header-mid{
+    .header-mid {
         display: none;
     }
-    .dropdown-menu{
+
+    .dropdown-menu {
         display: block;
     }
-    .toggle-btn{
+
+    .toggle-btn {
         display: block;
         position: fixed;
         right: 20px;
     }
 
-    .toggle-btn:hover{
+    .toggle-btn:hover {
         scale: 1.1;
         cursor: pointer;
     }
-    .dropdown-menu a{
+
+    .dropdown-menu a {
         width: 100%;
         text-align: center;
     }
-    footer{
+
+    footer {
         font-size: 1.5rem;
     }
 
 
-    .item-description{
-        max-width:600px;
+    .item-description {
+        max-width: 600px;
     }
 
-    .banner-head{
+    .banner-head {
         font-size: 3rem;
     }
-    .banner-description{
+
+    .banner-description {
         font-size: 1.5rem;
     }
 
@@ -572,52 +596,52 @@ span.bsm{
 
 }
 
-@media screen and (max-width: 900px){
-    .programs-offered{
+@media screen and (max-width: 900px) {
+    .programs-offered {
         font-size: 4rem;
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:600px) {
 
 
-    body{
+    body {
         background-image: url('../img/pexels-ivan-samkov-4164761.jpg');
     }
- .upper-text{
-font-size: 4rem;
- }
 
- .center-text{
-    font-size: 2rem;
- }
+    .upper-text {
+        font-size: 4rem;
+    }
 
- .dropdown-menu{
-    width:unset;
-    left: 2rem;
-    max-width: 550px;
- }
+    .center-text {
+        font-size: 2rem;
+    }
 
-footer{
-    font-size: 1rem;
+    .dropdown-menu {
+        width: unset;
+        left: 2rem;
+        max-width: 550px;
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .programs-offered {
+        font-size: 2.2rem;
+
+    }
+
+    .description {
+        font-size: 1.5rem;
+    }
+
+    .banner-head {
+        font-size: 1.4rem;
+    }
+
+    .banner-description {
+        font-size: 1.1rem;
+    }
+
 }
-
-.programs-offered{
-    font-size: 2.2rem;
-
-}
-
-.description{
-    font-size: 1.5rem;
-}
-
-.banner-head{
-    font-size: 1.4rem;
-}
-.banner-description{
-    font-size: 1.1rem;
-}
-
-}
-
-

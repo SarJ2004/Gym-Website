@@ -1,0 +1,2 @@
+1. changing the titles
+2. Changing the transparency of hover of the nav
