@@ -1,38 +1,61 @@
-*{
+* {
     background-image: none;
     /* color: black; */
 }
 
-body{
+body {
     background-image: url('../img/pexels-lukas-669577.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.instructors-title{
+.instructors-title {
     font-size: 7rem;
     font-family: 'Righteous', cursive;
     padding-top: 4rem;
-   color: black;
+    color: black;
     text-align: center;
+    animation: bounceMePls ease-in-out 1s;
 }
 
-.instructors-title span{
+.instructors-title span {
     color: orangered;
 }
 
-.wave{
+@keyframes bounceMePls {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.wave {
     text-align: center;
 }
 
-.instructors-desc{
+.instructors-desc {
     padding: 1rem;
     text-align: center;
     color: rgb(50, 50, 50);
 }
 
-.instructors-grid{
+.instructors-grid {
     display: flex;
     justify-content: space-evenly;
     gap: 3rem;
@@ -40,121 +63,155 @@ body{
     margin-inline: auto;
     margin-top: 2rem;
     /* padding: 2rem; */
-    
+
 }
 
-.instructor-card{
+.instructor-card {
     max-width: 350px;
-    background-color:rgb(255, 255, 255);
-    border-bottom-left-radius:0 ;
-    border-bottom-right-radius:0 ;
+    background-color: rgb(255, 255, 255);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    box-shadow: 0 0 30px rgb(0, 0, 0);
-    
-    
+
+
+
 }
 
-.socials{
+.instructor-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+    transition: all linear 200ms;
+    box-shadow: 0 0 30px rgb(0, 0, 0);
+}
+
+.socials {
     display: flex;
     gap: 1rem;
     background-color: black;
-    
+
+
 }
 
-.fb:hover{
-    scale: 1.05;
+.fb {
+    transition: all ease-in-out 200ms;
 }
-.insta:hover{
-    scale: 1.05;
+
+.insta {
+    transition: all ease-in-out 200ms;
 }
-.linkedin:hover{
-    scale: 1.05;
+
+.linkedin {
+    transition: all ease-in-out 200ms;
 }
-.img{
+
+.fb:hover {
+    scale: 1.05;
+    background-color: white;
+}
+
+.insta:hover {
+    scale: 1.05;
+    background-color: white;
+}
+
+.linkedin:hover {
+    scale: 1.05;
+    background-color: white;
+}
+
+.img {
     text-align: center;
     margin-top: 2rem;
 }
 
-.img img{
+.img img {
     border-radius: 5px;
 }
-.job{
+
+.job {
     margin-left: 21px;
     color: rgb(255, 68, 0);
     font-weight: bolder;
 }
-.name{
+
+.name {
     margin-left: 20px;
     text-align: center;
     color: black;
 }
 
-.description{
+.description {
     color: rgb(72, 72, 72);
     font-size: medium;
 }
-.instructor-nav{
+
+.instructor-nav {
     display: none;
     font-size: 1.5rem;
     justify-content: space-around;
     flex-wrap: nowrap;
     margin: 5rem 0 5rem 0;
     background-color: rgba(98, 98, 98, 0.422);
-position: absolute;
-top: 0;
-width: 100%;
-height: 40px;
-align-items: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 40px;
+    align-items: center;
 
-    
+
 }
-.instructor-nav li{
+
+.instructor-nav li {
     list-style-type: none;
 }
-.instructor-nav li:hover{
+
+.instructor-nav li:hover {
     scale: 1.05;
     background-color: rgba(191, 191, 191, 0.704);
     border-radius: 5px;
 }
 
-.instructor-nav span{
+.instructor-nav span {
     color: #000;
 }
 
-.instructor-nav li a{
+.instructor-nav li a {
     text-decoration: none;
     color: orangered
 }
 
-@media screen and (max-width:1024px){
-    .instructor-nav{
+@media screen and (max-width:1024px) {
+    .instructor-nav {
         display: flex;
     }
 }
-@media screen and (max-width:768px){
-    .instructor-nav{
+
+@media screen and (max-width:768px) {
+    .instructor-nav {
         font-size: 1rem;
     }
-    .instructors-title{
+
+    .instructors-title {
         font-size: 5rem;
     }
-    .instructors-desc{
+
+    .instructors-desc {
         color: black;
     }
 }
 
-@media screen and (max-width:450px){
-    .instructor-nav{
+@media screen and (max-width:450px) {
+    .instructor-nav {
         font-size: 0.75rem;
     }
-    .instructors-title{
+
+    .instructors-title {
         font-size: 3rem;
     }
-    .instructors-desc{
+
+    .instructors-desc {
         font-size: 1rem;
         color: black;
     }
 }
-
-

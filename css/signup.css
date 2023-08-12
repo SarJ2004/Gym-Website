@@ -1,46 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nunito&display=swap');
 
-*{
+* {
     background-image: none;
 }
-body{
+
+body {
     background-image: url('../img/pexels-cesar-galeão-3253501.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.marquee{
+.marquee {
     margin-top: 2rem;
-    background-image: linear-gradient(to right,  rgba(113, 113, 113, 0.56), rgba(255, 68, 0, 0.533) );
+    background-image: linear-gradient(to right, rgba(113, 113, 113, 0.56), rgba(255, 68, 0, 0.533));
     min-height: 50px;
     position: sticky;
     top: 85px;
     font-size: larger;
     z-index: 1;
-    
+
 }
 
-.signup-title{
+.signup-title {
     font-size: 7rem;
     font-family: 'Righteous', cursive;
     padding-top: 4rem;
     margin-left: 2rem;
     text-align: center;
-    
+    animation: bounceMePls ease-in-out 1s;
 }
-.signup-title span{
+
+@keyframes bounceMePls {
+    0% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-30px);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+
+    60% {
+        transform: translateY(15px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.signup-title span {
     color: orangered;
 }
-.wave{
+
+.wave {
     text-align: center;
     scale: 1.1;
 }
 
-form{
-    
-    
-   display: flex;
+form {
+
+
+    display: flex;
     align-items: flex-start;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.337);
@@ -55,27 +80,30 @@ form{
 
 }
 
-legend{
-text-align: center;
-font-family: "Fugaz One", "cursive";
-font-size: 3rem;
-margin-bottom: 3rem;
+legend {
+    text-align: center;
+    font-family: "Fugaz One", "cursive";
+    font-size: 3rem;
+    margin-bottom: 3rem;
 
 }
-legend span{
+
+legend span {
     color: orangered;
 }
 
-label{
-    
+label {
+
     text-align: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 0.1rem;
     font-size: 2rem;
     font-weight: bold;
 }
-input, select{
- 
+
+input,
+select {
+
     width: 600px;
     min-height: 60px;
     border-radius: 5px;
@@ -86,66 +114,74 @@ input, select{
     color: white;
     font-size: 1.5rem;
     padding: 1rem;
-    
+
 }
-input:hover, select:hover{
+
+input:hover,
+select:hover {
     cursor: pointer;
 }
-input:focus, select:focus{
+
+input:focus,
+select:focus {
     scale: 1.01;
     box-shadow: 0 0 30px black;
 
 }
-option{
+
+option {
     cursor: pointer;
-    
+
 }
-.form-item{
+
+.form-item {
     display: flex;
     flex-direction: column;
-    
-}
-
-
-
-.has-an-acc{
-text-align: center;
-padding-top: 20px;
 
 }
 
-.has-an-acc a{
+
+
+.has-an-acc {
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.has-an-acc a {
     text-decoration: none;
     color: orangered;
     transition: all ease-in 250ms;
-    
-    
+
+
 }
 
-.has-an-acc a:hover{
+.has-an-acc a:hover {
     text-decoration: underline;
     text-decoration-color: orangered;
     color: white;
 }
 
-.reg, .sub{
+.reg,
+.sub {
     color: white;
-text-transform: uppercase;
-width: 128px;
-height: 64px;
-padding: 0;
-margin-left: 10px;
-outline: none;
-border: none;
-border-radius: 5px;
-background-color: rgba(255, 68, 0, 0.615);
-font-size: 1rem;
-font-weight: 800;
-transition: all ease-in 250ms;
+    text-transform: uppercase;
+    width: 128px;
+    height: 64px;
+    padding: 0;
+    margin-left: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 68, 0, 0.615);
+    font-size: 1rem;
+    font-weight: 800;
+    transition: all ease-in 250ms;
 
 }
 
-.reg:hover, .sub:hover{
+.reg:hover,
+.sub:hover {
     cursor: pointer;
     color: orangered;
     scale: 0.95;
@@ -153,25 +189,27 @@ transition: all ease-in 250ms;
 }
 
 
-@media screen and (max-width:630px)
-{
-    input, select{
+@media screen and (max-width:630px) {
+
+    input,
+    select {
         width: 300px;
     }
 
-    legend{
+    legend {
         font-size: 2.5rem;
     }
-    .signup-title{
+
+    .signup-title {
         font-size: 5rem;
         width: auto;
     }
-label{
-    font-size: 2rem;
-}
-    .has-an-acc{
+
+    label {
+        font-size: 2rem;
+    }
+
+    .has-an-acc {
         font-size: 1.3rem;
     }
 }
-
-
